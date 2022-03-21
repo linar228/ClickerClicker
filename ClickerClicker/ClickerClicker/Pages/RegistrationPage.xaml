@@ -18,7 +18,7 @@
                 <Entry x:Name="PasswordEntry" Placeholder="Пароль" IsPassword="True" Margin="-15,-15"/>
             </Frame>
             <StackLayout Orientation="Vertical" Spacing="40">
-                <Button Clicked="CreateButton_Clicked" Text="Создать аккаунт"  Margin="30, 0, 30, 0" BackgroundColor="#F93F26" BorderColor="Black" CornerRadius="50" TextColor="White"></Button>
+                <Button Text="Создать аккаунт"  Margin="30, 0, 30, 0" BackgroundColor="#F93F26" BorderColor="Black" CornerRadius="50" TextColor="White"></Button>
                 <Button Clicked="BackButton_Clicked" Text="Назад"  Margin="30, -20, 30, 0" HeightRequest="50" BackgroundColor="#F93F26" CornerRadius="50" BorderColor="Black" TextColor="White"></Button>
             </StackLayout>
         </StackLayout>
