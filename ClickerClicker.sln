@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickerClicker.Android", "ClickerClicker\ClickerClicker.Android\ClickerClicker.Android.csproj", "{093F4411-34BA-489E-9CCF-CE8985744563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickerClicker", "ClickerClicker\ClickerClicker\ClickerClicker.csproj", "{08B36999-04DB-4719-95F0-2AAD934FFBF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{093F4411-34BA-489E-9CCF-CE8985744563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093F4411-34BA-489E-9CCF-CE8985744563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093F4411-34BA-489E-9CCF-CE8985744563}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{093F4411-34BA-489E-9CCF-CE8985744563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093F4411-34BA-489E-9CCF-CE8985744563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093F4411-34BA-489E-9CCF-CE8985744563}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{08B36999-04DB-4719-95F0-2AAD934FFBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B36999-04DB-4719-95F0-2AAD934FFBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B36999-04DB-4719-95F0-2AAD934FFBF6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{08B36999-04DB-4719-95F0-2AAD934FFBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B36999-04DB-4719-95F0-2AAD934FFBF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08B36999-04DB-4719-95F0-2AAD934FFBF6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C2ADD2F-E781-4F92-B7DC-3C05A05542E6}
+	EndGlobalSection
+EndGlobal
