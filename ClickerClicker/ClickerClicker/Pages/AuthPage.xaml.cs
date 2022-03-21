@@ -23,5 +23,28 @@ namespace ClickerClicker.Pages
         {
             await Navigation.PushAsync(new RegistrationPage());
         }
+        private async void AuthButton_Clicked(object sender, EventArgs e)
+        {
+            var allUsers = App.Db.GetUsers();
+
+            if (EmailEntry.Text == null && PasswordEntry.Text == null)
+                await DisplayAlert("Alert!", "Не правилный логин или пароль", "OK");
+            else
+            {
+                bool haveUser = false;
+
+                foreach (var user in allUsers)
+                {
+                    if (user.Email == EmailEntry.Text && user.Password == PasswordEntry.Text)
+                    {
+                        await Navigation.PushAsync(new RegistrationPage());
+                        haveUser = true;
+                    }
+                }
+
+                if (!haveUser)
+                    await DisplayAlert("Alert!", "Не правилный логин или пароль", "OK");
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ClickerClicker.DB;
 
 namespace ClickerClicker.Pages
 {
@@ -18,9 +19,38 @@ namespace ClickerClicker.Pages
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
         private async void BackButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
+        }
+
+        private async void AddButton_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                if (FIOEntry.Text != null && EmailEntry.Text != null && NumberEntry.Text != null && PasswordEntry.Text != null)
+                {
+                    var user = new User
+                    {
+                        Name = FIOEntry.Text,
+                        Email = EmailEntry.Text,
+                        Password = PasswordEntry.Text,
+                        PhoneNum = NumberEntry.Text,
+                        Balance = 0,
+                        Clicks = 0,
+                    };
+
+                    App.Db.SaveUser(user);
+                    await Navigation.PopAsync();
+                }
+                else
+                    await DisplayAlert("Alert!", "Введите в поля данные!", "OK");
+            }
+            catch
+            {
+                await DisplayAlert("Alert!", "Не удалось зарегистрироваться", "OK");
+            }
         }
     }
 }
