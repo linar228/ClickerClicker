@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClickerClicker.Pages.ProfilePage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            Spacing="0"
+            BackgroundColor="#e8d5d3"
+            HeightRequest="100"
+            Grid.Column="0" Grid.Row="0">
+
+            <Grid BackgroundColor="#F93F26" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="Back.png" WidthRequest="45" HeightRequest="45" Margin="-30, 0, 0, 0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnBackButtonPressed" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="ClickerTitle.png" Grid.Column="1" Margin="0, -20, 0, 0"/>
+                <Image Source="ClickerTitle.png" Grid.Column="1" Margin="0, 20, 0, 0" />
+            </Grid>
+
+            <Image Source="ProfileIco.png" Margin="20" WidthRequest="140" HeightRequest="140"/>
+
+            <Label x:Name="FIO" Text="Иванов Иван Иванович" TextColor="Black" FontSize="16" FontAttributes="Bold" Margin="65, 10, 0, 0"/>
+            <Label x:Name="Phone" Text="+7 (333) 333-33-33" TextColor="Black" FontSize="16" FontAttributes="Bold" Margin="65, 10, 0, 0"/>
+            <Label x:Name="Mail" Text="ivanov@mail.ru" TextColor="Black" FontSize="16" FontAttributes="Bold" Margin="65, 10, 0, 0"/>
+            <Label x:Name="ClickCount" Text="Всего было кликнуто: 1,231,212" TextColor="Black" FontAttributes="Bold" FontSize="16" Margin="65, 10, 0, 0"/>
+            <Label x:Name="EarnCount" Text="Всего было заработано: 689,213" TextColor="Black" FontAttributes="Bold" FontSize="16" Margin="65, 10, 0, 0"/>
+            <Label x:Name="MaxLvl" Text="Максимальный лвл: 23" TextColor="Black" FontSize="16" FontAttributes="Bold" Margin="65, 10, 0, 0"/>
+            <Label x:Name="MaxDmg" Text="Максимальный урон: 132" TextColor="Black" FontSize="16" FontAttributes="Bold" Margin="65, 10, 0, 0"/>
+            <Label x:Name="MaxUprade" Text="Макимум улучшений: 150" TextColor="Black" FontSize="16" FontAttributes="Bold" Margin="65, 10, 0, 0"/>
+            <Label x:Name="RegDate" Text="Дата регистрации: 20.11.2022" TextColor="Black" FontSize="16" FontAttributes="Bold" Margin="65, 10, 0, 0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
