@@ -18,13 +18,13 @@ namespace ClickerClicker
             {
                 if (db == null)
                 {
-                    db = new DataAccess(
-                        Path.Combine(
-                            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME));
+                    db = new DataAccess(Path.Combine(
+                        Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME));
                 }
                 return db;
             }
         }
+
         public App()
         {
             InitializeComponent();

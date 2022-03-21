@@ -7,7 +7,7 @@ namespace ClickerClicker.DB
 {
     public class DataAccess
     {
-        readonly SQLiteConnection db;
+        private SQLiteConnection db;
 
         public DataAccess(string databasePath)
         {

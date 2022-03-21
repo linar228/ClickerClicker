@@ -23,6 +23,7 @@ namespace ClickerClicker.Pages
         {
             await Navigation.PushAsync(new RegistrationPage());
         }
+
         private async void AuthButton_Clicked(object sender, EventArgs e)
         {
             var allUsers = App.Db.GetUsers();

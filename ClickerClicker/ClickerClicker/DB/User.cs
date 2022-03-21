@@ -14,9 +14,9 @@ namespace ClickerClicker.DB
         [Unique]
         public string Name { get; set; }
         public string Password { get; set; }
-        public string PhoneNum { get; set; }
+        public long PhoneNum { get; set; }
         public string Email { get; set; }
-        public int Clicks { get; set; }
-        public int Balance { get; set; }
+        public long Clicks { get; set; }
+        public long Balance { get; set; }
     }
 }

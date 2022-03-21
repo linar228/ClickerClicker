@@ -36,7 +36,7 @@ namespace ClickerClicker.Pages
                         Name = FIOEntry.Text,
                         Email = EmailEntry.Text,
                         Password = PasswordEntry.Text,
-                        PhoneNum = NumberEntry.Text,
+                        PhoneNum = Convert.ToInt64(NumberEntry.Text),
                         Balance = 0,
                         Clicks = 0,
                     };
@@ -49,7 +49,7 @@ namespace ClickerClicker.Pages
             }
             catch
             {
-                await DisplayAlert("Alert!", "Не удалось зарегистрироваться", "OK");
+                await DisplayAlert("Alert!", "Проверьте введённые данные", "OK");
             }
         }
     }
