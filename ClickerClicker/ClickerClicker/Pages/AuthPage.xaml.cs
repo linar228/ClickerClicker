@@ -15,6 +15,13 @@ namespace ClickerClicker.Pages
         public AuthPage()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+        private async void CreateAccount_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegistrationPage());
         }
     }
 }
