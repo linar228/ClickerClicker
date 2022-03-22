@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClickerClicker.Pages.ShopPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            Spacing="0"
+            BackgroundColor="#e8d5d3"
+            HeightRequest="100"
+            Grid.Column="0" Grid.Row="0">
+
+            <Grid BackgroundColor="#F93F26" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="Back.png" WidthRequest="45" HeightRequest="45" Margin="-30, 0, 0, 0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnBackButtonPressed" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="ClickerTitle.png" Grid.Column="1" Margin="0, -20, 0, 0"/>
+                <Image Source="ClickerTitle.png" Grid.Column="1" Margin="0, 20, 0, 0" />
+            </Grid>
+
+            <Frame BackgroundColor="#ef8a7c" Margin="10, 25, 10, 0" CornerRadius="5" HeightRequest="70">
+                <Grid Padding="-10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="MegaClick.png" Margin="-30, 0, 0, 0" />
+                    <Label Text="Мега Клик" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 15, 0, 0"/>
+                    <Label x:Name="MegaClickLvl" Text="Лвл: 6" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 35, 0, 0"/>
+                    <Label x:Name="MegaClickDmg" Text="Урон: 6" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 55, 0, 0"/>
+                    <Button x:Name="MegaClickBuy" Text="Купить" BackgroundColor="#FF1E00" TextColor="White" Grid.Column="2" TextTransform="None" CornerRadius="10" Margin="0, 27, 0, 27" Padding="-5" Clicked="MegaClickBuy_Clicked" />
+                    <Label x:Name="MegaClickCost" Text="Цена: 25" TextColor="White" FontSize="14" Grid.Column="2" Margin="0, 70, 0, 0" HorizontalOptions="Center" />
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="#ef8a7c" Margin="10, 25, 10, 0" CornerRadius="5" HeightRequest="70">
+                <Grid Padding="-10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="NeonClick.png" Margin="-15, -20, 0, -10" />
+                    <Label Text="Неоновый Клик" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 15, 0, 0"/>
+                    <Label x:Name="NeonClickLvl" Text="Лвл: 1" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 35, 0, 0"/>
+                    <Label x:Name="NeonClickDmg" Text="Авто-Урон: 1" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 55, 0, 0"/>
+                    <Button x:Name="NeonClickBuy" Text="Купить" BackgroundColor="#FF1E00" TextColor="White" Grid.Column="2" TextTransform="None" CornerRadius="10" Margin="0, 27, 0, 27" Padding="-5" Clicked="NeonClickBuy_Clicked" />
+                    <Label x:Name="NeonClickCost" Text="Цена: 5" TextColor="White" FontSize="14" Grid.Column="2" Margin="0, 70, 0, 0" HorizontalOptions="Center" />
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="#ef8a7c" Margin="10, 25, 10, 0" CornerRadius="5" HeightRequest="70">
+                <Grid Padding="-10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="HandClick.png" Margin="-10, 15, 15, 15" />
+                    <Label Text="Клик Ладошкой" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 15, 0, 0"/>
+                    <Label x:Name="HandClickLvl" Text="Лвл: 4" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 35, 0, 0"/>
+                    <Label x:Name="HandClickDmg" Text="Авто-Урон: 8" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 55, 0, 0"/>
+                    <Button x:Name="HandClickBuy" Text="Купить" BackgroundColor="#FF1E00" TextColor="White" Grid.Column="2" TextTransform="None" CornerRadius="10" Margin="0, 27, 0, 27" Padding="-5" Clicked="HandClickBuy_Clicked" />
+                    <Label x:Name="HandClickCost" Text="Цена: 50" TextColor="White" FontSize="14" Grid.Column="2" Margin="0, 70, 0, 0" HorizontalOptions="Center" />
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="#ef8a7c" Margin="10, 25, 10, 0" CornerRadius="5" HeightRequest="70">
+                <Grid Padding="-10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="DIckClick.png" Margin="-20, 0, 0, 0" />
+                    <Label Text="Хуеклик" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 15, 0, 0"/>
+                    <Label x:Name="DickClickLvl" Text="Лвл: 10" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 35, 0, 0"/>
+                    <Label x:Name="DickClickDmg" Text="Авто-Урон: 40" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 55, 0, 0"/>
+                    <Button x:Name="DickClickBuy" Text="Купить" BackgroundColor="#FF1E00" TextColor="White" Grid.Column="2" TextTransform="None" CornerRadius="10" Margin="0, 27, 0, 27" Padding="-5" Clicked="DickClickBuy_Clicked" />
+                    <Label x:Name="DickClickCost" Text="Цена: 400" TextColor="White" FontSize="14" Grid.Column="2" Margin="0, 70, 0, 0" HorizontalOptions="Center" />
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="#ef8a7c" Margin="10, 25, 10, 0" CornerRadius="5" HeightRequest="70">
+                <Grid Padding="-10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="MagicClick.png" Margin="10, 15, 15, 10" />
+                    <Label Text="Магический Клик" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 15, 0, 0"/>
+                    <Label x:Name="MagicClickLvl" Text="Лвл: 1" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 35, 0, 0"/>
+                    <Label x:Name="MagicClickDmg" Text="Авто-Урон: 8" TextColor="White" FontAttributes="Bold" Grid.Column="1" Margin="0, 55, 0, 0"/>
+                    <Button x:Name="MagicClickBuy" Text="Купить" BackgroundColor="#FF1E00" TextColor="White" Grid.Column="2" TextTransform="None" CornerRadius="10" Margin="0, 27, 0, 27" Padding="-5" Clicked="MagicClickBuy_Clicked" />
+                    <Label x:Name="MagicClickCost" Text="Цена: 100" TextColor="White" FontSize="14" Grid.Column="2" Margin="0, 70, 0, 0" HorizontalOptions="Center" />
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -21,8 +21,16 @@
                 <Image Source="ClickerTitle.png" Grid.Column="0" Margin="0, -20, 0, 0" />
                 <Image Source="ClickerTitle.png" Grid.Column="0" Margin="0, 20, 0, 0" />
                 <StackLayout Orientation="Horizontal" Grid.Column="2" HorizontalOptions="End" Spacing="20">
-                    <Image Source="ShopIcon.png" HeightRequest="40"/>
-                    <Image Source="ProfileIco.png" HeightRequest="40"/>
+                    <Image Source="ShopIcon.png" HeightRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnShopButtonPressed" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="ProfileIco.png" HeightRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProfileButtonPressed" />
+                        </Image.GestureRecognizers>
+                    </Image>
                 </StackLayout>
             </Grid>
 

@@ -16,5 +16,15 @@ namespace ClickerClicker.Pages
         {
             InitializeComponent();
         }
+
+        private async void OnShopButtonPressed(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ShopPage());
+        }
+
+        private async void OnProfileButtonPressed(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProfilePage());
+        }
     }
 }
