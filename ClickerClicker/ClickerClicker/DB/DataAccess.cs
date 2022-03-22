@@ -15,6 +15,11 @@ namespace ClickerClicker.DB
             db.CreateTable<User>();
         }
 
+        public User GetUser(int id)
+        {
+            return db.Get<User>(id);
+        }
+
         public IEnumerable<User> GetUsers()
         {
             return db.Table<User>();

@@ -11,6 +11,7 @@ namespace ClickerClicker
     {
         public const string DATABASE_NAME = "Clicker.db";
         public static DataAccess db;
+        public static int userID;
 
         public static DataAccess Db
         {

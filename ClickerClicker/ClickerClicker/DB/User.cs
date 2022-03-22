@@ -18,5 +18,11 @@ namespace ClickerClicker.DB
         public string Email { get; set; }
         public long Clicks { get; set; }
         public long Balance { get; set; }
+        public long EarnCount { get; set; }
+        public int MaxLvl { get; set; }
+        public int MaxDamage { get; set; }
+        public int MaxUpgrades { get; set; }
+        public DateTime RegistrationDate { get; set; }
+        public string UpgradeLevels { get; set; }
     }
 }

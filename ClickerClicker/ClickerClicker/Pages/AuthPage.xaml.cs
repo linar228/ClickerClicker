@@ -38,6 +38,7 @@ namespace ClickerClicker.Pages
                 {
                     if (user.Email == EmailEntry.Text && user.Password == PasswordEntry.Text)
                     {
+                        App.userID = user.Id;
                         await Navigation.PushAsync(new MainPage());
                         haveUser = true;
                     }

@@ -46,11 +46,11 @@
                 </Grid.ColumnDefinitions>
                 <StackLayout Orientation="Vertical" Grid.Column="0" Spacing="0">
                     <Label Text="Кликов:" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
-                    <Label Text="228" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
+                    <Label x:Name="ClickCount" Text="228" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Grid.Column="1" Spacing="0">
                     <Label Text="Баланс:" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
-                    <Label Text="228" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
+                    <Label x:Name="Balance" Text="228" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
                 </StackLayout>
             </Grid>
         </Grid>

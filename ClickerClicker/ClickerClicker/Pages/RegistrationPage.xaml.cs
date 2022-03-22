@@ -34,11 +34,17 @@ namespace ClickerClicker.Pages
                     var user = new User
                     {
                         Name = FIOEntry.Text,
-                        Email = EmailEntry.Text,
                         Password = PasswordEntry.Text,
                         PhoneNum = Convert.ToInt64(NumberEntry.Text),
-                        Balance = 0,
+                        Email = EmailEntry.Text,
                         Clicks = 0,
+                        Balance = 0,
+                        EarnCount = 0,
+                        MaxLvl = 0,
+                        MaxDamage = 0,
+                        MaxUpgrades = 0,
+                        RegistrationDate = DateTime.Now,
+                        UpgradeLevels = "1,0,0,0,0",
                     };
 
                     App.Db.SaveUser(user);

@@ -15,6 +15,11 @@ namespace ClickerClicker.Pages
         public MainPage()
         {
             InitializeComponent();
+
+            var user = App.Db.GetUser(App.userID);
+
+            ClickCount.Text = user.Clicks.ToString();
+            Balance.Text = user.Balance.ToString();
         }
 
         private async void OnShopButtonPressed(object sender, EventArgs e)
