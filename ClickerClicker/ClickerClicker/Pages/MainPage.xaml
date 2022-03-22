@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClickerClicker.Pages.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid BackgroundColor="#F93F26" Padding="10" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="4*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="ClickerTitle.png" Grid.Column="0" Margin="0, -20, 0, 0" />
+                <Image Source="ClickerTitle.png" Grid.Column="0" Margin="0, 20, 0, 0" />
+                <StackLayout Orientation="Horizontal" Grid.Column="2" HorizontalOptions="End" Spacing="20">
+                    <Image Source="ShopIcon.png" HeightRequest="40"/>
+                    <Image Source="ProfileIco.png" HeightRequest="40"/>
+                </StackLayout>
+            </Grid>
+
+            <StackLayout BackgroundColor="#e8d5d3" Grid.Row="1" Margin="-6">
+                <Image Source="light_back.png" Margin="0,-80,0,0" AbsoluteLayout.LayoutBounds="0,0,0,0"/>
+            </StackLayout>
+            <Image Source="defaultClick.png" Grid.Row="1" Margin="60"/>
+
+            <Grid BackgroundColor="#F93F26" Padding="10" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Orientation="Vertical" Grid.Column="0" Spacing="0">
+                    <Label Text="Кликов:" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
+                    <Label Text="228" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Grid.Column="1" Spacing="0">
+                    <Label Text="Баланс:" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
+                    <Label Text="228" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

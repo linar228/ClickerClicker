@@ -29,7 +29,7 @@ namespace ClickerClicker
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new AuthPage());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
