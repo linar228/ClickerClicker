@@ -41,7 +41,7 @@ namespace ClickerClicker.DB
                 return db.Insert(user);
         }
 
-        public int UpdateClicks(User user)
+        public int UpdateUser(User user)
         {
             return db.Update(user);
         }

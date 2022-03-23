@@ -37,7 +37,11 @@
             <StackLayout BackgroundColor="#e8d5d3" Grid.Row="1" Margin="-6">
                 <Image Source="light_back.png" Margin="0,-80,0,0" AbsoluteLayout.LayoutBounds="0,0,0,0"/>
             </StackLayout>
-            <Image Source="defaultClick.png" Grid.Row="1" Margin="60"/>
+            <Image Source="defaultClick.png" Grid.Row="1" Margin="60">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnClickButtonPressed" />
+                </Image.GestureRecognizers>
+            </Image>
 
             <Grid BackgroundColor="#F93F26" Padding="10" Grid.Row="2">
                 <Grid.ColumnDefinitions>
